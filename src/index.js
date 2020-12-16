@@ -38,6 +38,7 @@ function change() {
   currentDate.innerHTML = today;
 }
 change();
+
 // Bonus challenge
 function changeToFahrenheit(event) {
   event.preventDefault();
