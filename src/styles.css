@@ -60,11 +60,12 @@ button {
 }
 
 .precipitation-card {
-  position: fixed;
-  top: 160px;
-  right: 250px;
+  position: relative;
+  top: -130px;
+  left: 100px;
   border: thick double #1f3c88;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .card-body {
