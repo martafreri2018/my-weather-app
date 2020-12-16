@@ -97,9 +97,9 @@ small {
 
 .forecast {
   position: relative;
-  left: 95px;
   text-align: center;
   color: #495057;
+  left: 60px;
 }
 
 #currentTemp {
