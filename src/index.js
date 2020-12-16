@@ -56,8 +56,8 @@ celsius.addEventListener("click", changeToCelsius);
 
 // Search city
 function showWeather(response) {
-  document.querySelector("#country").innerHTML = response.data.sys.country;
-  document.querySelector("#today").innerHTML = Math.round(
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#Temp-today").innerHTML = Math.round(
     response.data.main.temp
   );
 }
