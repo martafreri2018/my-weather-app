@@ -38,10 +38,15 @@ h4 {
 button {
   display: inline-block;
   position: relative;
+  right: 30px;
 }
 
 small {
   text-align: center;
+}
+
+.btn-success {
+  right: 50px;
 }
 
 .currentTemp {
@@ -56,11 +61,7 @@ small {
   width: 80%;
   margin-right: 0;
   margin-left: 0;
-}
-
-.enter {
-  margin-top: 5px;
-  box-shadow: 5px 5px 5 px 10px (0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.3);
 }
 
 .precipitation-card {
