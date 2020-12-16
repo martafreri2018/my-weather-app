@@ -47,8 +47,11 @@ small {
   text-align: center;
 }
 
+.btn-primary {
+  left: -10px;
+}
 .btn-success {
-  right: 50px;
+  left: -20px;
 }
 
 .currentTemp {
