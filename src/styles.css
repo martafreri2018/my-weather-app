@@ -15,6 +15,7 @@ h2 {
 h2,
 h3 {
   font-size: 20px;
+  color: #495057;
 }
 h3 {
   font-family: "Varela Round", sans-serif;
@@ -47,6 +48,10 @@ small {
   text-align: center;
 }
 
+.container {
+  display: block;
+}
+
 .btn-primary {
   left: -10px;
 }
@@ -68,7 +73,7 @@ small {
 
 .card-body {
   font-family: "Varela Round", sans-serif;
-  color: black;
+  color: #495057;
 }
 
 .col-2 i {
@@ -84,6 +89,7 @@ small {
   position: relative;
   left: 95px;
   text-align: center;
+  color: #495057;
 }
 
 #currentTemp {
@@ -93,12 +99,14 @@ small {
 .weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
+  display: block;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  display: block;
 }
 
 .repository {
