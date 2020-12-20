@@ -47,6 +47,7 @@ function changeToFahrenheit(event) {
 }
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", changeToFahrenheit);
+
 function changeToCelsius(event) {
   event.preventDefault();
   let newTempCelsius = document.querySelector("#currentTemp");
