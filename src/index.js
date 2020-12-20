@@ -59,7 +59,15 @@ celsius.addEventListener("click", changeToCelsius);
 function displayWeatherCondition (response) {
   document.querySelector ("#city").innerHTML= response.data.name; 
   document.querySelector ("#currentTemp").innerHTML= Math.round(response.data.main.temp);
+
+   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
+
 
 fuction searchCity (city) {
   let apiKey= "329ed4c9b33de1b60e6d184aac65a30a"; 
