@@ -8,6 +8,7 @@ function change() {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
   let days = [
     "Sunday",
     "Monday",
@@ -18,6 +19,7 @@ function change() {
     "Saturday",
     "Sunday"
   ];
+
   let day = days[now.getDay()];
   let months = [
     "January",
@@ -33,6 +35,7 @@ function change() {
     "November",
     "December"
   ];
+
   let month = months[now.getMonth()];
   let today = `${day} ${date} ${month} ${year}, ${hours}:${minutes}`;
   currentDate.innerHTML = today;
@@ -70,7 +73,7 @@ function displayWeatherCondition (response) {
 }
 
 
-fuction searchCity (city) {
+function searchCity (city) {
   let apiKey= "329ed4c9b33de1b60e6d184aac65a30a"; 
   let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
