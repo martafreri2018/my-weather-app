@@ -61,7 +61,7 @@ celsius.addEventListener("click", changeToCelsius);
 
 // Search city
 function displayWeatherCondition (response) {
-  let iconElement = document.querySelector ("icon");
+  let iconElement = document.querySelector ("#icon");
   document.querySelector ("#city").innerHTML= response.data.name; 
   document.querySelector ("#currentTemp").innerHTML= Math.round(response.data.main.temp);
 
