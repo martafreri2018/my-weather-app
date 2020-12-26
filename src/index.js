@@ -47,6 +47,8 @@ function changeToFahrenheit(event) {
   event.preventDefault();
   let newTempFahrenheit = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement= document.querySelector ("#currentTemp");
+  celsius.classList.remove ("active"); 
+  fahrenheit.classList.add ("active");
   temperatureElement.innerHTML=Math.round(newTempFahrenheit);
 }
 
@@ -57,6 +59,8 @@ fahrenheit.addEventListener("click", changeToFahrenheit);
 function changeToCelsius(event) {
   event.preventDefault();
   let newTempCelsius = document.querySelector("#currentTemp");
+  celsius.classList.add ("active"); 
+  fahrenheit.classList.remove ("active");
   newTempCelsius.innerHTML = Math.round (celsiusTemperature);
 }
 

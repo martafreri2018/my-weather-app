@@ -97,13 +97,6 @@ li {
   font-size: 30px;
 }
 
-#celsius {
-  text-decoration: none;
-  color: black;
-}
-:hover #celsius {
-  cursor: default;
-}
 .weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
@@ -115,6 +108,16 @@ li {
   border: 1px solid #dadde1;
   border-radius: 5px;
   display: block;
+}
+
+.float-left .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.float-left .active :hover {
+  text-decoration: none;
 }
 
 .repository {
