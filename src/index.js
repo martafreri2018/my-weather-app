@@ -45,8 +45,9 @@ change();
 // Bonus challenge
 function changeToFahrenheit(event) {
   event.preventDefault();
-  let newTempFahrenheit = document.querySelector("#currentTemp");
-  newTempFahrenheit.innerHTML = `57`;
+  let newTempFahrenheit = (14 * 9) / 5 + 32;
+  let temperatureElement= document.querySelector ("#temperature");
+  temperatureElement.innerHTML=newTempFahrenheit;
 }
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", changeToFahrenheit);
