@@ -45,18 +45,21 @@ change();
 // Bonus challenge
 function changeToFahrenheit(event) {
   event.preventDefault();
-  let newTempFahrenheit = (14 * 9) / 5 + 32;
-  let temperatureElement= document.querySelector ("#temperature");
-  temperatureElement.innerHTML=newTempFahrenheit;
+  let newTempFahrenheit = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement= document.querySelector ("#currentTemp");
+  temperatureElement.innerHTML=Math.round(newTempFahrenheit);
 }
+
+let celsiusTemperature = null;
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", changeToFahrenheit);
 
 function changeToCelsius(event) {
   event.preventDefault();
   let newTempCelsius = document.querySelector("#currentTemp");
-  newTempCelsius.innerHTML = `14`;
+  newTempCelsius.innerHTML = Math.round (celsiusTemperature);
 }
+
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", changeToCelsius);
 
@@ -66,6 +69,7 @@ function displayWeatherCondition (response) {
   document.querySelector ("#city").innerHTML= response.data.name; 
   document.querySelector ("#currentTemp").innerHTML= Math.round(response.data.main.temp);
 
+  celsiusTemperature= response.data.main.temp;
    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
