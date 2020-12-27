@@ -97,6 +97,7 @@ li {
 
 #currentTemp {
   font-size: 60px;
+  font-family: "Varela Round", sans-serif;
 }
 
 .weather-app-wrapper {
@@ -133,6 +134,10 @@ li {
 #forecast {
   font-family: "Varela Round", sans-serif;
   color: #495057;
+}
+
+#forecast strong {
+  color: black;
 }
 
 #forecast img {

@@ -28,7 +28,7 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
-
+formatDate ();
 
 // Bonus challenge
 function changeToFahrenheit(event) {
