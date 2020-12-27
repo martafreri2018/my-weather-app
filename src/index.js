@@ -14,6 +14,7 @@ function formatDate(timestamp) {
   return `${day} ${formatHours(timestamp)}`;
 }
 
+
 function formatHours(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -28,7 +29,6 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
-formatDate ();
 
 // Bonus challenge
 function changeToFahrenheit(event) {

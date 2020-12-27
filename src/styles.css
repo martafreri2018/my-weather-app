@@ -149,3 +149,8 @@ li {
   position: relative;
   top: -20px;
 }
+
+#celsius,
+#fahrenheit {
+  font-family: "Varela Round", sans-serif;
+}
