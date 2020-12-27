@@ -96,7 +96,7 @@ li {
 }
 
 #currentTemp {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .weather-app-wrapper {
@@ -138,4 +138,9 @@ li {
 #forecast img {
   position: relative;
   left: -20px;
+}
+
+#icon {
+  position: relative;
+  top: -20px;
 }
