@@ -10,8 +10,28 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday"
   ];
+
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+
+  let month = months[now.getMonth()];
+  let year = now.getFullYear();
+
+
   let day = days[date.getDay()];
-  return `${day} ${formatHours(timestamp)}`;
+  return `${day}, ${month} ${year}, ${formatHours(timestamp)}`;
 }
 
 
@@ -29,6 +49,9 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
+let now = new Date();
+let currentDate = document.querySelector("#today");
+currentDate.innerHTML = formatDate(now);
 
 // Bonus challenge
 function changeToFahrenheit(event) {
