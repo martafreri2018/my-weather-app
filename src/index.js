@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-
+ 
   let days = [
     "Sunday",
     "Monday",
@@ -28,11 +28,11 @@ function formatDate(timestamp) {
 
   let month = months[now.getMonth()];
   let year = now.getFullYear();
-
-
   let day = days[date.getDay()];
+ 
   return `${day}, ${month} ${year}, ${formatHours(timestamp)}`;
 }
+
 
 
 function formatHours(timestamp) {
@@ -52,6 +52,7 @@ function formatHours(timestamp) {
 let now = new Date();
 let currentDate = document.querySelector("#today");
 currentDate.innerHTML = formatDate(now);
+
 
 // Bonus challenge
 function changeToFahrenheit(event) {
